@@ -9,6 +9,7 @@
     }
 
 	&__text-content {
+		padding-top: 88px;
 		position: absolute;
 		/* Trick to center the text vertically: top 50% then transform: translateY(-50%) */
 		top: 50%;
@@ -18,6 +19,10 @@
 		/*trick to center the text horizontally inside the div*/
 		width: 100%;
 		text-align: center;
+
+		@mixin atMedium {
+			padding-top: 60px;
+		}
 	}
 
 	&__title {
